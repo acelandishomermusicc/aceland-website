@@ -277,3 +277,71 @@ footer h3 {
     grid-template-columns: 1fr 1fr;
   }
 }
+/* UPDATES */
+
+.update-card {
+  padding: 30px;
+  background: #111;
+  border: 1px solid #292929;
+  border-radius: 20px;
+}
+
+.update-card h3 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.update-card p {
+  color: #999;
+}
+
+
+/* PHOTO GALLERY */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.photo {
+  height: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: radial-gradient(
+    circle at 30% 30%,
+    #444,
+    #111 70%
+  );
+
+  border-radius: 18px;
+  border: 1px solid #292929;
+
+  color: #777;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+  transition: 0.2s;
+}
+
+.photo:hover {
+  transform: scale(1.02);
+}
+
+
+/* PHONE */
+
+@media (max-width: 700px) {
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .photo {
+    height: 250px;
+  }
+
+}
